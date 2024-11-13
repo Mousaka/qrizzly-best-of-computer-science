@@ -1,1 +1,5 @@
 .idea
+src/*/bin/
+src/*/obj/
+BestOfCs.sln.DotSettings.user
+Folder.DotSettings.user
