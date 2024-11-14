@@ -58,10 +58,11 @@ let rec listMapTail' fn list acc=
     
 let listMapTail fn list =
     listMapTail' fn list []
-    
-    
+     
 // runWithTimer "fibTail" fibTail 48
 // runWithTimer "fib" fib 48
+    
+// Kolla motsvarande C# kod (while loop = tail call optimized) -> https://sharplab.io/
     
 // Övningar
 // implementera listFilter som fungerar som List.filter
