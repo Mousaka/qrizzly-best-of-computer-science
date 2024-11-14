@@ -1,4 +1,6 @@
-﻿let rec stackOverflow n =
+﻿open System.Runtime.InteropServices.JavaScript
+
+let rec stackOverflow n =
     if n = 0 then 0
     else 1 + stackOverflow (n - 1)
    
@@ -38,10 +40,11 @@ let runWithTimer name fn arg =
 // F# main function
 [<EntryPoint>]
 let main argv =
+    printfn $"fac {factorialBasic 10}"
     // printfn $"stackOverflow: %i{stackOverflow 1000000}"
     // printfn $"factorial: {factorial 10}"
-    runWithTimer "fibTail" fibTail 48
-    runWithTimer "fib" fib 48
-    
+    runWithTimer "fibTail" fibTail 50
+    // runWithTimer "fib" fib 48
+     
     
     0 // return an integer exit code

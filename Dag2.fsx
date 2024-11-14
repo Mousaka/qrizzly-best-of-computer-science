@@ -34,8 +34,41 @@ let runWithTimer name fn arg =
     stopWatch.Stop();
     printfn $"%s{name} %A{arg} result: %A{result} in %f{stopWatch.Elapsed.TotalSeconds} seconds"
     
+    
+    // [1,2,3] -> [2,4,6]
 
-runWithTimer "fibTail" fibTail 48
-runWithTimer "fib" fib 48
+let rec listAddTwo list =
+    match list with
+    | head::tail ->
+        head * 2 :: listAddTwo tail
+    | [] -> []
+
+let rec listMap fn list =
+    match list with
+    | head::tail ->
+        fn head  :: listMap fn tail
+    | [] -> []
+    
+let rec listMapTail' fn list acc=
+    match list with
+    | head::tail ->
+        listMapTail' fn tail (fn head :: acc)
+    | [] -> List.rev acc 
+        
+    
+let listMapTail fn list =
+    listMapTail' fn list []
     
     
+// runWithTimer "fibTail" fibTail 48
+// runWithTimer "fib" fib 48
+    
+// Övningar
+// implementera listFilter som fungerar som List.filter
+// Gör den svansrekursiv.
+
+// implementera listFoldl som fungerar som List.foldl (något svårare)
+// Gör den svansrekursiv.
+
+// implementera listFilter och listMap m.h.a. listFoldl
+  
