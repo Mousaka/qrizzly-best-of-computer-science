@@ -91,7 +91,7 @@ let bubbleSort (arr: int array) =
 // Övning 1
 // a)
 // Implementera en funktion som tar en lista och returnerar en lista med alla unika element från listan.
-// Psuedokod är okej det viktigaste är resonerandet kring tidskomplexiten.
+// Pseudokod är okej det viktigaste är resonerandet kring tidskomplexiten.
 // Exempel input och output:
 // [1;2;3;1;2;4;5;4] -> [1;2;3;5]
 // [1] -> [1]
