@@ -16,16 +16,16 @@ Small course in Swedish made for some colleagues
   - Svansrekursion
 - Tidskomplexitet O(1), O(log(n)), O(n), O(n^2), O(n^n),
   - https://en.wikipedia.org/wiki/Big_O_notation
-- Mängdlära grunder
-  - Union
-  - Delmängd
-  - Snitt
-  - Differens
 - Datastrukturer
   - Binära träd
   - Binärsökning
   - Set
   - Dict
+- Mängdlära grunder
+  - Union
+  - Delmängd
+  - Snitt
+  - Differens
 - Normalisering databaser
 - Algoritmer (Extra++ mest för skojs skull om viljan finns)
   - Balansera binära träd
